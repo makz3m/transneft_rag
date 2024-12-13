@@ -40,7 +40,7 @@
 
 # Как воспроизвести эксперименты?
 
-Чтобы проводить эксперементы с моделью, необходимо зайти в конфиг (config.yaml) и вставить туда [HFAPI](https://huggingface.co/settings/tokens) и [PineconeAPI](https://app.pinecone.io/organizations/-ODyMPMyGrGYdSCnYqSa/settings/projects). С конфигом можно эксперементировать. Например, если использовать реранкер, точноть модели будет выше. Далее необходимо запустить dashboard.py . Этот скрипт заупстит модель и валидацию, а позже покажет баллы всех сохраненных тестов, включая настоящий.
+Чтобы проводить эксперементы с моделью, необходимо зайти в конфиг (config.yaml) и вставить туда [llamacloudAPI](https://cloud.llamaindex.ai/), [HFAPI](https://huggingface.co/settings/tokens) и [PineconeAPI](https://app.pinecone.io/organizations/-ODyMPMyGrGYdSCnYqSa/settings/projects). С конфигом можно эксперементировать. Например, если использовать реранкер, точноть модели будет выше. Далее необходимо запустить dashboard.py . Этот скрипт заупстит модель и валидацию, а позже покажет баллы всех сохраненных тестов, включая настоящий.
 
 ## Проведём эксперимент
 

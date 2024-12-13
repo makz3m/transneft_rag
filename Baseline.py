@@ -26,7 +26,7 @@ class Baseline():
   repo_id = config["reader_model_repo"]
   llm = HuggingFaceEndpoint(
     repo_id=repo_id,
-    huggingfacehub_api_token=config["LLAMA_CLOUD_API_KEY"],
+    huggingfacehub_api_token=config["HHFAPI"],
 )
 
 

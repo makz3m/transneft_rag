@@ -1,5 +1,6 @@
-LLAMA_CLOUD_API_KEY: 'ВВЕДИТЕ КЛЮЧ СЮДА'
-PineconeAPI: 'ВВЕДИТЕ КЛЮЧ СЮДА'
+LLAMA_CLOUD_API_KEY: 'llx-0pp4abZJKiaWeFENybPIhCCQvJqJeylLCokPzaaoHAW6z4ff'
+HHFAPI: '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'
+PineconeAPI: 'pcsk_6LTmp7_Qj1MriNR5u5SXbCzFDnGLVdm1Qty2Nm3wU2UTyj9tr7azvcxgZTeCyGiCL5c6Nx'
 
 QAGenerator_model_repo: 'mistralai/Mixtral-8x7B-Instruct-v0.1'
 chunk_size: 200
