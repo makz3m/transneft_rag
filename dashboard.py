@@ -1,5 +1,4 @@
-from Evaluator import Evaluator
-import glob
+from Valuator import Valuator
 import glob
 import pandas as pd
 import json
@@ -15,14 +14,18 @@ def dashboard():
       for mark in marks:
           mark = re.search(r'\b\d+\b', mark)
           if mark != None:
+           
             if int(mark.group()) != 0 :
               n += 1
             summa += int(mark.group())
-      print(file, "\tscore =", (summa/n)/5*100 , "%" )
+      try:
+        print(file, "\tscore =", (summa/n)/5*100 , "%" )
+      except:
+        print(file, "\tscore =", "???" , "%" )
 
 
 
 
 if __name__ == "__main__":
-  Evaluator().evaluate()    #раскоментируйте, если хотите запустить валидацию
+  #Valuator().evaluate()    #раскоментируйте, если хотите запустить валидацию
   dashboard()

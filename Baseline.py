@@ -90,7 +90,7 @@ class Baseline():
     query: str,
     reranker: Optional[bool] = False,
     num_retrieved_docs: int = 50,
-    num_docs_final: int = 3,
+    num_docs_final: int = 2,
 ):
     self.load_embeddings(knowledge=Knowledge().get_documents(), chunk_size=config["chunk_size"])
     relevant_docs = self.vectorstore.similarity_search(query=query, k=num_retrieved_docs)

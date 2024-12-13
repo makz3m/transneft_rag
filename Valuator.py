@@ -35,7 +35,7 @@ eval_chat_model = HuggingFaceEndpoint(
 
 
 
-class Evaluator():
+class Valuator():
   settings_name = f"chunk_{config['chunk_size']}_embeddings_{config['tokenizer'].replace('/', '-')}_rerank_{config['rerank']}_reader-model_{config['reader_model_repo'].replace('/', '-')}"
   output_file = f"./output/rag_{settings_name}.json"
   def rag_test(self,
@@ -83,7 +83,6 @@ class Evaluator():
             reference_answer=experiment["true_answer"],
         )
       eval_result = eval_chat_model.invoke(eval_prompt)
-      print(eval_result)
       try:
         feedback, score =  [eval_result.split("<assistant>")[-1].split("[RESULT]")[i] for i in [0,1]]
         experiment[f"eval_score"] = score
