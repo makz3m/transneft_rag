@@ -1,0 +1,9 @@
+LLAMA_CLOUD_API_KEY: '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'
+PineconeAPI: 'pcsk_LHAcX_Bi7MJKtHvVjv2rJuQRWcuVFQSRAeHQWUfnLzhbivWwxmNtZTivpcWKdAbSQF2b5'
+
+QAGenerator_model_repo: 'mistralai/Mixtral-8x7B-Instruct-v0.1'
+chunk_size: 100
+reader_model_repo: 'mistralai/Mixtral-8x7B-Instruct-v0.1'
+tokenizer: 'thenlper/gte-small'
+rerank: True
+eval_chat_model: 'mistralai/Mixtral-8x7B-Instruct-v0.1'
